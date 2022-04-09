@@ -1,0 +1,443 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    
+}
+
+.container {
+  display: flex;
+    width: 1200px;
+    height: 2000;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    
+}
+
+.discounts {
+    display: flex;
+    font-size: 12px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.discounts a {
+  display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.discounts a:hover {
+  text-decoration: underline;
+  
+}
+
+.nav-bar { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.search-bar {
+    text-align: left;
+    min-height: 45px;
+    border-radius: 10px;
+    height: 20px;
+    background-color: #f5f5f5;
+    border: 1px #aa9494 transparent;
+}
+
+.search-bar:hover {
+  background-color: #f5dddd;
+
+}
+
+.log-in p, .like-us p, .shopping-basket p {  
+  cursor: pointer;
+  border: 2px solid transparent;
+  padding: 8px;
+  border-radius: 20px; 
+}
+
+.shopping-basket { 
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+.log-in:hover p, .like-us:hover p, .shopping-basket:hover p{
+
+  background-color: rgb(240, 229, 229);
+
+}
+
+.other-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px rgb(97, 92, 92) solid;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 590px;
+  justify-items: left;
+}
+
+.links2, .links3 {
+  display: flex;
+  margin: 5px; 
+}
+
+.links2:hover, .links3:hover {
+  cursor: pointer;
+  text-decoration: underline; 
+}
+
+.Producten, .Ruimten, .Promo {
+  width: 90px;
+  height: 20px;
+
+}
+
+.Producten {
+  margin-right: 22px;
+}
+
+.links a {
+  line-height: 3px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: black;
+  
+}
+
+.ikea-logo img{
+  border: 2px;
+  border-radius: 5px;
+}
+
+.welcome {
+    display: flex;
+    align-self: left;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+/* Container holding the image and the text */
+.banner {
+  display: flex;
+    background-color: blueviolet;
+    position: relative;
+  }
+
+.banner img {
+  max-width:100%;
+  }
+
+  /* Bottom right text */
+  .item1 {
+    position: absolute;
+    bottom: 600px;
+    right: 680px;
+    background-color: #fff;
+    color: rgb(5, 0, 0);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .item2 {
+    position: absolute;
+    bottom: 125px;
+    right: 200px;
+    background-color: #fff;
+    color: rgb(5, 0, 0);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .item3 {
+    position: absolute;
+    bottom: 550px;
+    right: 150px;
+    background-color: #fff;
+    color: rgb(5, 0, 0);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .item1:hover, .item2:hover, .item3:hover {
+    background-color: rgb(245, 229, 14);
+    color:rgb(5, 5, 5);
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    .discounts {
+      height: 60px;
+      width: 500px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: safe;
+      align-items: center;
+      justify-items: center;
+
+    }
+
+    .nav-bar { 
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-items: center;
+      align-items: center;
+      width: 500px;
+      height: auto;
+  }
+  
+  .search-bar {
+      margin-left: 3px;
+      flex-wrap: no-wrap;
+      text-align: left;
+      border-radius: 5px;
+      height: auto;
+      width: 250px;
+      background-color: #f5f5f5;
+      border: 1px #aa9494 transparent;
+  }
+
+  .ikea-logo {
+    margin-left: 7px;
+    height: auto;
+    width: 495px;
+    flex-wrap: wrap;
+    justify-items: left;
+    align-items: left;
+    justify-content: left;
+    margin-top: 5px;
+  }
+
+  .other-links {
+    width: 500px;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  .links {
+    flex-direction: row;
+    width: 250px;
+    height: auto;
+    margin: 0;
+  }
+
+  .links2, .links3 {
+    flex-direction: row;
+    width: 100px;
+    height: auto;
+    margin: 0;
+  }
+  .links2 p, .links3 p {
+    text-align: center;
+  }
+
+  .banner {
+    width: 500px;
+    height: auto;
+  }
+  .welcome h1{
+  width: 500px;
+  text-align: center;
+  }
+
+  .banner img {
+    max-width: 500px;
+    height: auto;
+  }
+
+  .item1 {
+    position: absolute;
+    bottom: 180px;
+    right: 290px;
+    font-size: 12px;
+    
+  }
+
+  .item2 {
+    position: absolute;
+    bottom: 25px;
+    right: 50px;
+    font-size: 12px;
+
+  }
+
+  .item3 {
+    position: absolute;
+    bottom: 200px;
+    right: 50px;
+    font-size: 12px;
+   
+  }
+
+  }
+
+.img-title {
+  background-color: aqua;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 225px 225px 225px 225px 225px 225px 225px 225px;
+  grid-template-rows: 275px 275px 275px 275px 275px 275px 275px 275px;
+
+
+}
+
+
+.product1 {
+  display: flex;
+  position: relative;
+  width: 210px;
+}
+
+.beddengoed {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  color: rgb(53, 48, 48);
+}
+
+.product2 {
+  display: flex;
+  position: relative;
+  width: 210px;
+}
+
+.kussen {
+  position: absolute;
+  bottom: 30px;
+  left: 70px;
+  color: rgb(53, 48, 48);
+}
+
+.product3 {
+  display: flex;
+  position: relative;
+  width: 210px;
+  
+}
+
+.buitenverlichting {
+  position: absolute;
+  bottom: 30px;
+  left: 45px;
+  color: rgb(53, 48, 48);
+}
+
+.product4 {
+  display: flex;
+  position: relative;
+}
+
+.bloempotten {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  color: rgb(53, 48, 48);
+}
+
+.product5 {
+  display: flex;
+  position: relative;
+}
+
+.decoratie {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  color: rgb(53, 48, 48);
+}
+
+.product6 {
+  display: flex;
+  position: relative;
+}
+
+.tapijten {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  color: rgb(53, 48, 48);
+}
+
+.product7 {
+  display: flex;
+  position: relative;
+}
+
+.gordijnen {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  color: rgb(53, 48, 48);
+}
+
+.product8 {
+  display: flex;
+  position: relative;
+}
+
+.eetgerei {
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  color: rgb(53, 48, 48);
+}
+
+.beddengoed, .tapijten, .bloempotten, .buitenverlichting, .decoratie, .eetgerei, .kussen, .gordijnen {
+  padding: 10px;
+  border-radius: 25px;
+ 
+}
+
+.beddengoed:hover, .tapijten:hover, .bloempotten:hover, .buitenverlichting:hover, .decoratie:hover, .eetgerei:hover, .kussen:hover, .gordijnen:hover {
+  
+  cursor: pointer;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgb(136, 153, 153);
+
+  
+}
+
+.grid {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
